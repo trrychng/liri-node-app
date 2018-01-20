@@ -5,7 +5,7 @@ var spotify = require('node-spotify-api');
 var fs = require("fs");
 var resultsFeed = 0;
 
-
+require("dotenv").config();
 
 var nodeArgs = process.argv
 var liriCommand = process.argv[2];
@@ -26,7 +26,8 @@ if (liriCommand === "my-tweets") {
 } 
 
 function myTwitterFeed(){
-	client = new twitter(keys.twitterKeys);
+	client = new twitter(keys.twitter);
+	console.log(keys.twitter)
 	client.get('statuses/user_timeline', { screen_name: 'trrychng', count: 20 }, function(error, tweets, response) {
       fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
       +"----------------------------"+"\r\n"
@@ -55,7 +56,7 @@ if (liriCommand === "spotify-this-song") {
 }
 
 function spotifyThisSong() {
-	client = new spotify(keys.spotifyKeys);
+	client = new spotify(keys.spotify);
 	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
 	+"---------------------------------------------"+"\r\n"
   +"Beginning Spotify search..."+"\r\n", function(){})
