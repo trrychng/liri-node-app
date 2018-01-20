@@ -44,3 +44,33 @@ Command to run: my-tweets
 Beginning Twitter feed...
 Error occured. See below: 
 [object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]

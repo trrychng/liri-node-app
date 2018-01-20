@@ -5,4 +5,5 @@
 
 
 # ENV File
-keys.env
+log.txt
+.env
