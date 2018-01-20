@@ -94,3 +94,36 @@ Command to run: my-tweets
 Beginning Twitter feed...
 Error occured. See below: 
 [object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+----------------------------
+1.
+Text: Nexus 6P International #Giveaway @androidauth https://t.co/z4qaFRtowt
+Published: Sun Jun 05 22:33:09 +0000 2016
+----------------------------
+2.
+Text: Win the Ultimate Custom NCIX PC Powered by Corsair and ASUS worth over $3200 from @NCIXdotCOM Holiday Giveaway! https://t.co/NhnAhvv0yk
+Published: Fri Dec 18 14:24:02 +0000 2015
+
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+----------------------------
+1.
+Text: Nexus 6P International #Giveaway @androidauth https://t.co/z4qaFRtowt
+Published: Sun Jun 05 22:33:09 +0000 2016
+----------------------------
+2.
+Text: Win the Ultimate Custom NCIX PC Powered by Corsair and ASUS worth over $3200 from @NCIXdotCOM Holiday Giveaway! https://t.co/NhnAhvv0yk
+Published: Fri Dec 18 14:24:02 +0000 2015

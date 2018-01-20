@@ -1,3 +1,8 @@
+
+
+
+require("dotenv").config();
+
 var keys = require("./keys.js");
 var request = require("request");
 var twitter = require("twitter");
@@ -5,7 +10,8 @@ var spotify = require('node-spotify-api');
 var fs = require("fs");
 var resultsFeed = 0;
 
-require("dotenv").config();
+
+
 
 var nodeArgs = process.argv
 var liriCommand = process.argv[2];
@@ -56,7 +62,8 @@ if (liriCommand === "spotify-this-song") {
 }
 
 function spotifyThisSong() {
-	client = new spotify(keys.spotify);
+	client = new spotify(console.log(keys.spotify));
+	console.log(keys.spotify)
 	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
 	+"---------------------------------------------"+"\r\n"
   +"Beginning Spotify search..."+"\r\n", function(){})
