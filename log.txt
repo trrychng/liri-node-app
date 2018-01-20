@@ -295,3 +295,291 @@ Album: The Amulet
 ---------------------------------------------
 Album: The Amulet
 ---------------------------------------------
+
+Command to run: spotify-this-song,survive
+---------------------------------------------
+Beginning Spotify search...
+---------------------------------------------
+1.
+Artist: Gloria Gaynor
+Song Name: I Will Survive
+Album: 20th Century Masters: The Millennium Collection: Best Of Gloria Gaynor
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/24b7180e1cbabb4a40c83bf4bdf592d34e40bdad?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Abandoned Mansion
+---------------------------------------------
+---------------------------------------------
+3.
+Artist: Hank Williams, Jr.
+Song Name: A Country Boy Can Survive
+Preview Link: https://p.scdn.co/mp3-preview/6c278f980b5594b4f9ecbaef1af37e2857d0a574?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Bocephus Box Set
+---------------------------------------------
+---------------------------------------------
+4.
+Artist: Cake
+Song Name: I Will Survive
+Preview Link: https://p.scdn.co/mp3-preview/5ec7ceb1dee774bc5bb37a9fb7e7cde9c502d30a?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Fashion Nugget
+---------------------------------------------
+---------------------------------------------
+2.
+Artist: Dr. Dog
+Song Name: Survive
+Preview Link: https://p.scdn.co/mp3-preview/ae885288ff0aa44dd45cd62fba303e7f275e6a9b?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+5.
+Artist: Will Connolly
+Song Name: More Than Survive
+---------------------------------------------
+6.
+Artist: Hank Williams, Jr.
+Song Name: A Country Boy Can Survive
+Preview Link: https://p.scdn.co/mp3-preview/6c278f980b5594b4f9ecbaef1af37e2857d0a574?cid=d201f130448c47e3b551a64fa79d44e8
+Link: https://open.spotify.com/track/7cv28LXcjAC3GsXbUvXKbX
+Album: The Pressure Is On
+---------------------------------------------
+Album: Be More Chill (Original Cast Recording)
+---------------------------------------------
+---------------------------------------------
+7.
+Artist: Gloria Gaynor
+Song Name: I Will Survive - Rerecorded
+Preview Link: https://p.scdn.co/mp3-preview/0f5744013a9c7464474a7c634a7880306ad1297d?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+8.
+Artist: Vanze
+Song Name: Survive
+Preview Link: https://p.scdn.co/mp3-preview/e1c1503c94313721c20b231064f83c1ed3d81704?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Survive
+---------------------------------------------
+---------------------------------------------
+9.
+Artist: Circa Survive
+Song Name: Lustration
+Preview Link: https://p.scdn.co/mp3-preview/ab56fb0222893a801dd281b3e800a72c26d40a81?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Amulet
+---------------------------------------------
+Album: I Will Survive (Rerecorded)
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/db81f4194771add14fcb9e1f67afe63df85bd4bb?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+11.
+Artist: Rise Against
+Song Name: Survive
+---------------------------------------------
+10.
+Artist: Circa Survive
+Song Name: Get Out
+Album: Blue Sky Noise (Deluxe Version)
+---------------------------------------------
+---------------------------------------------
+12.
+Artist: MandoPony
+Song Name: Survive the Night
+Preview Link: https://p.scdn.co/mp3-preview/79e0a1d8a9e301f615931dd15bbeb717680cc754?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Five Songs for Freddy
+---------------------------------------------
+Album: The Sufferer & The Witness
+---------------------------------------------
+---------------------------------------------
+13.
+Artist: Kanye West
+Song Name: Who Will Survive In America
+Album: My Beautiful Dark Twisted Fantasy
+---------------------------------------------
+Link: https://open.spotify.com/track/5QdGtvqKitrxvF2OsX4bU9
+---------------------------------------------
+14.
+Artist: Circa Survive
+Song Name: The Difference Between Medicine And Poison Is In The Dose
+Album: On Letting Go
+---------------------------------------------
+Link: https://open.spotify.com/track/4e5IPJxSGVWPsaxQzdRseN
+Preview Link: https://p.scdn.co/mp3-preview/4aa060654508315ae913af9fb65d88c1275b6f08?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Angry Birds Movie (Original Motion Picture Soundtrack)
+---------------------------------------------
+---------------------------------------------
+15.
+Artist: Demi Lovato
+Song Name: I Will Survive
+Preview Link: https://p.scdn.co/mp3-preview/b4e21658c4d99b6ad1426ed5bdeada7debe56a99?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Fox Und fertig - Zwanzig Gnadenlose Disco-Fox Hits - Die Internationale
+---------------------------------------------
+---------------------------------------------
+17.
+Artist: Will Connolly
+Song Name: More Than Survive - Reprise
+---------------------------------------------
+16.
+Artist: Gloria Gaynor
+Song Name: I Will Survive - Reconstructed
+Preview Link: https://p.scdn.co/mp3-preview/9b02ef86f170950b7d803bb7018f9866deaa0bb9?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Be More Chill (Original Cast Recording)
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/12e7c4893517ae289c80253bc4dae560851fa564?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+18.
+Artist: Circa Survive
+Song Name: Rites of Investiture
+Preview Link: https://p.scdn.co/mp3-preview/ccffa3995b13c6a6b8312a935aba8046e48e81b5?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+19.
+Artist: Circa Survive
+Song Name: Premonition of the Hex
+Preview Link: https://p.scdn.co/mp3-preview/18ecf7e5ff765e8b0d97d622a5a8f67f51421c9c?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+20.
+Artist: Circa Survive
+Song Name: The Amulet
+Album: The Amulet
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/e590ef300a6a643af24a50d1b6da552052627a21?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Amulet
+---------------------------------------------
+Album: The Amulet
+---------------------------------------------
+
+Command to run: spotify-this-song,survive
+---------------------------------------------
+Beginning Spotify search...
+---------------------------------------------
+1.
+Artist: Gloria Gaynor
+Song Name: I Will Survive
+Album: 20th Century Masters: The Millennium Collection: Best Of Gloria Gaynor
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/24b7180e1cbabb4a40c83bf4bdf592d34e40bdad?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+2.
+Artist: Dr. Dog
+Song Name: Survive
+---------------------------------------------
+3.
+Artist: Hank Williams, Jr.
+Song Name: A Country Boy Can Survive
+Preview Link: https://p.scdn.co/mp3-preview/6c278f980b5594b4f9ecbaef1af37e2857d0a574?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Abandoned Mansion
+---------------------------------------------
+Album: The Bocephus Box Set
+---------------------------------------------
+---------------------------------------------
+4.
+Artist: Cake
+Song Name: I Will Survive
+Preview Link: https://p.scdn.co/mp3-preview/5ec7ceb1dee774bc5bb37a9fb7e7cde9c502d30a?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+5.
+Artist: Will Connolly
+Song Name: More Than Survive
+Preview Link: https://p.scdn.co/mp3-preview/ae885288ff0aa44dd45cd62fba303e7f275e6a9b?cid=d201f130448c47e3b551a64fa79d44e8
+Link: https://open.spotify.com/track/7cv28LXcjAC3GsXbUvXKbX
+Album: Fashion Nugget
+---------------------------------------------
+Album: Be More Chill (Original Cast Recording)
+---------------------------------------------
+---------------------------------------------
+6.
+Artist: Hank Williams, Jr.
+Song Name: A Country Boy Can Survive
+Preview Link: https://p.scdn.co/mp3-preview/6c278f980b5594b4f9ecbaef1af37e2857d0a574?cid=d201f130448c47e3b551a64fa79d44e8
+Preview Link: https://p.scdn.co/mp3-preview/0f5744013a9c7464474a7c634a7880306ad1297d?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Pressure Is On
+---------------------------------------------
+---------------------------------------------
+7.
+Artist: Gloria Gaynor
+Song Name: I Will Survive - Rerecorded
+Preview Link: https://p.scdn.co/mp3-preview/e1c1503c94313721c20b231064f83c1ed3d81704?cid=d201f130448c47e3b551a64fa79d44e8
+Album: I Will Survive (Rerecorded)
+---------------------------------------------
+---------------------------------------------
+9.
+Artist: Circa Survive
+Song Name: Lustration
+Preview Link: https://p.scdn.co/mp3-preview/ab56fb0222893a801dd281b3e800a72c26d40a81?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Survive
+---------------------------------------------
+Album: The Amulet
+---------------------------------------------
+---------------------------------------------
+10.
+Artist: Rise Against
+Song Name: Survive
+---------------------------------------------
+8.
+Artist: Vanze
+Song Name: Survive
+---------------------------------------------
+11.
+Artist: Circa Survive
+Song Name: Get Out
+Link: https://open.spotify.com/track/5QdGtvqKitrxvF2OsX4bU9
+Album: The Sufferer & The Witness
+---------------------------------------------
+Album: Blue Sky Noise (Deluxe Version)
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/79e0a1d8a9e301f615931dd15bbeb717680cc754?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+12.
+Artist: MandoPony
+Song Name: Survive the Night
+Preview Link: https://p.scdn.co/mp3-preview/db81f4194771add14fcb9e1f67afe63df85bd4bb?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+13.
+Artist: Kanye West
+Song Name: Who Will Survive In America
+Album: My Beautiful Dark Twisted Fantasy
+---------------------------------------------
+Link: https://open.spotify.com/track/4e5IPJxSGVWPsaxQzdRseN
+Album: Five Songs for Freddy
+---------------------------------------------
+---------------------------------------------
+14.
+Artist: Circa Survive
+Song Name: The Difference Between Medicine And Poison Is In The Dose
+Album: On Letting Go
+---------------------------------------------
+---------------------------------------------
+15.
+Artist: Demi Lovato
+Song Name: I Will Survive
+Preview Link: https://p.scdn.co/mp3-preview/4aa060654508315ae913af9fb65d88c1275b6f08?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+16.
+Artist: Will Connolly
+Song Name: More Than Survive - Reprise
+Preview Link: https://p.scdn.co/mp3-preview/b4e21658c4d99b6ad1426ed5bdeada7debe56a99?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Angry Birds Movie (Original Motion Picture Soundtrack)
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/12e7c4893517ae289c80253bc4dae560851fa564?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+17.
+Artist: Circa Survive
+Song Name: Rites of Investiture
+Preview Link: https://p.scdn.co/mp3-preview/ccffa3995b13c6a6b8312a935aba8046e48e81b5?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Be More Chill (Original Cast Recording)
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/9b02ef86f170950b7d803bb7018f9866deaa0bb9?cid=d201f130448c47e3b551a64fa79d44e8
+Album: Fox Und fertig - Zwanzig Gnadenlose Disco-Fox Hits - Die Internationale
+---------------------------------------------
+---------------------------------------------
+19.
+Artist: Circa Survive
+Song Name: Premonition of the Hex
+Preview Link: https://p.scdn.co/mp3-preview/18ecf7e5ff765e8b0d97d622a5a8f67f51421c9c?cid=d201f130448c47e3b551a64fa79d44e8
+---------------------------------------------
+20.
+Artist: Circa Survive
+Song Name: The Amulet
+Album: The Amulet
+---------------------------------------------
+Preview Link: https://p.scdn.co/mp3-preview/e590ef300a6a643af24a50d1b6da552052627a21?cid=d201f130448c47e3b551a64fa79d44e8
+Album: The Amulet
+---------------------------------------------
+Album: The Amulet
+---------------------------------------------
+---------------------------------------------
+18.
+Artist: Gloria Gaynor
+Song Name: I Will Survive - Reconstructed
