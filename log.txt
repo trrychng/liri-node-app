@@ -1,0 +1,46 @@
+
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: movie-this
+---------------------------------------------
+Beginning movie search...
+---------------------------------------------
+Title: Mr. Nobody
+Released: 26 Sep 2013
+IMDB Rating: 7.9
+Rotten Tomatoes Rating: 66%
+Produced in Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+---------------------------------------------
+
+Command to run: movie-this,pokemon
+
+Command to run: movie-this
+---------------------------------------------
+Beginning movie search...
+---------------------------------------------
+Title: Mr. Nobody
+Released: 26 Sep 2013
+IMDB Rating: 7.9
+Rotten Tomatoes Rating: 66%
+Produced in Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+---------------------------------------------
+
+Command to run: movie-this,pokemon
+
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
+Command to run: my-tweets
+----------------------------
+Beginning Twitter feed...
+Error occured. See below: 
+[object Object]
