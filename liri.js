@@ -62,7 +62,7 @@ if (liriCommand === "spotify-this-song") {
 }
 
 function spotifyThisSong() {
-	client = new spotify(console.log(keys.spotify));
+	client = new spotify(keys.spotify);
 	console.log(keys.spotify)
 	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
 	+"---------------------------------------------"+"\r\n"
