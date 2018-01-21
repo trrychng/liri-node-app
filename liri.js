@@ -27,24 +27,39 @@ for (var i = 3; i < nodeArgs.length; i++) {
 if (liriCommand === "my-tweets") {
 	myTwitterFeed();
 } 
+if (liriCommand === "spotify-this-song") {
+	spotifyThisSong();
+}
+if (liriCommand === "movie-this") {
+movieSearch();
+}
+
+
+
+
 
 function myTwitterFeed(){
+
+	let twitterAcc='trrychng'
+
 	client = new twitter(keys.twitter);
-	console.log(keys.twitter)
-	client.get('statuses/user_timeline', { screen_name: 'trrychng', count: 20 }, function(error, tweets, response) {
+
+	client.get('statuses/user_timeline', {screen_name: twitterAcc, count: 20 }, function(error, tweets, response) {
       fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
       +"----------------------------"+"\r\n"
       +"Beginning Twitter feed..."+"\r\n", function(){});
-      for (i=0;i<tweets.length;i++){
+
+      for (i=0; i<tweets.length; i++){
       resultsFeed++
-      fs.appendFile("log.txt", "----------------------------"+"\r\n"
+
+      let log="----------------------------"+"\r\n"
       +resultsFeed+"."+"\r\n"
       +"Text: "+tweets[i].text+"\r\n"
-      +"Published: "+tweets[i].created_at+"\r\n", function(){});
-      console.log("----------------------------");
-      console.log(resultsFeed+".");
-      console.log("Text: "+tweets[i].text);
-      console.log("Published: "+tweets[i].created_at);
+      +"Published: "+tweets[i].created_at+"\r\n"
+
+      fs.appendFile("log.txt", log, function(){});
+      console.log(log)
+
     };
     if (error) {
     	console.log(error)
@@ -54,13 +69,11 @@ function myTwitterFeed(){
  }
 
 
-if (liriCommand === "spotify-this-song") {
-	spotifyThisSong();
-}
+
 
 function spotifyThisSong() {
 	client = new spotify(keys.spotify);
-	console.log(keys.spotify)
+
 	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
 	+"---------------------------------------------"+"\r\n"
   +"Beginning Spotify search..."+"\r\n", function(){})
@@ -81,13 +94,16 @@ function spotifyThisSong() {
 		+resultsFeed+"."+"\r\n"
 		+"Artist: "+data.tracks.items[i].artists[0].name+"\r\n"
 		+"Song Name: "+data.tracks.items[i].name+"\r\n", function(){});
+		
 		if (data.tracks.items[i].preview_url == null) {
 		console.log("Link: "+data.tracks.items[i].external_urls.spotify);
+
 		fs.appendFile("log.txt", "Link: "+data.tracks.items[i].external_urls.spotify+"\r\n", function(){})
 		} else {
 		console.log("Preview Link: "+data.tracks.items[i].preview_url);
 		fs.appendFile("log.txt", "Preview Link: "+data.tracks.items[i].preview_url+"\r\n", function(){})
 		}
+
 		console.log("Album: "+data.tracks.items[i].album.name);
 		console.log("---------------------------------------------")
 		fs.appendFile("log.txt", "Album: "+data.tracks.items[i].album.name+"\r\n"
@@ -130,70 +146,47 @@ function spotifyThisSong() {
 
 
 
-if (liriCommand === "movie-this") {
-movieSearch();
-}
+
 
 function movieSearch() {
+	if (liriSubject === ""){
+		liriSubject="mr+nobody"
+	}
+
+
 	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n", function(){})
-	if (liriSubject === "") {
-	request("http://www.omdbapi.com/?t=mr+nobody&y=&plot=short&apikey=40e9cece", function(error, response, body) {
-  if (!error && response.statusCode === 200) {
-  	console.log("--------------------------------")
-  	console.log("Title: "+JSON.parse(body).Title)
-  	console.log("Released: "+JSON.parse(body).Released)
-    console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
-    console.log("Rotten Tomatoes Rating: "+JSON.parse(body).Ratings[1].Value)
-    console.log("Produced in "+JSON.parse(body).Country)
-    console.log("Language: "+JSON.parse(body).Language)
-    console.log("Plot: "+JSON.parse(body).Plot)
-    console.log("--------------------------------")
-    fs.appendFile("log.txt", "---------------------------------------------"+"\r\n"
-	  +"Beginning movie search..."+"\r\n"
-	  +"---------------------------------------------"+"\r\n"
-    +"Title: "+JSON.parse(body).Title+"\r\n"
-		+"Released: "+JSON.parse(body).Released+"\r\n"
-		+"IMDB Rating: " + JSON.parse(body).imdbRating+"\r\n"
-		+"Rotten Tomatoes Rating: "+JSON.parse(body).Ratings[1].Value+"\r\n"
-		+"Produced in "+JSON.parse(body).Country+"\r\n"
-		+"Language: "+JSON.parse(body).Language+"\r\n"
-		+"Plot: "+JSON.parse(body).Plot+"\r\n"
-		+"---------------------------------------------"+"\r\n", function(){})
-  	} else {
+	request("http://www.omdbapi.com/?t="+liriSubject+"&type=movie&y=&plot=short&apikey=40e9cece", function(error, response, body) {
+
+     // console.log(JSON.stringify(response, null, 2));
+		let log ="---------------------------------------------"+"\r\n"
+	 			 +"Beginning movie search..."+"\r\n"
+	 			 +"---------------------------------------------"+"\r\n"
+	 			 +"Title: "+JSON.parse(body).Title+"\r\n"
+	 			 +"Released: "+JSON.parse(body).Released+"\r\n"
+	 			 +"IMDB Rating: " + JSON.parse(body).imdbRating+"\r\n"
+	 			 +"Rotten Tomatoes Rating: "+JSON.parse(body).Ratings[1].Value+"\r\n"
+	 			 +"Produced in "+JSON.parse(body).Country+"\r\n"
+	 			 +"Language: "+JSON.parse(body).Language+"\r\n"
+	 			 +"Plot: "+JSON.parse(body).Plot+"\r\n"
+	 			 +"Actors: "+JSON.parse(body).Actors+"\r\n"
+	 			 +"---------------------------------------------"+"\r\n"
+
+
+
+	 if (!error && response.statusCode === 200) {
+  		console.log(log)
+
+   	 fs.appendFile("log.txt", log, function(){})
+  	} 
+  	else {
   		console.log("See Error: "+error);
   		fs.appendFile("log.txt", "Error occurred. See below: "+"\r\n"+error+"\r\n", function(){});
   		}
 		})
-	} else {
-		request("http://www.omdbapi.com/?t="+liriSubject+"&y=&plot=short&apikey=40e9cece", function(error, response, body) {
-		if (!error && response.statusCode === 200) {
-  		console.log("--------------------------------")
-	  	console.log("Title: "+JSON.parse(body).Title)
-	  	console.log("Released: "+JSON.parse(body).Released)
-	    console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
-	    console.log("Rotten Tomatoes Rating: "+JSON.parse(body).Ratings[1].Value)
-	    console.log("Produced in "+JSON.parse(body).Country)
-	    console.log("Language: "+JSON.parse(body).Language)
-	    console.log("Plot: "+JSON.parse(body).Plot)
-	    console.log("--------------------------------")
-	    fs.appendFile("log.txt", "---------------------------------------------"+"\r\n"
-	    +"Beginning movie search..."+"\r\n"
-	    +"---------------------------------------------"+"\r\n"
-	    +"Title: "+JSON.parse(body).Title+"\r\n"
-		+"Released: "+JSON.parse(body).Released+"\r\n"
-		+"IMDB Rating: " + JSON.parse(body).imdbRating+"\r\n"
-		+"Rotten Tomatoes Rating: "+JSON.parse(body).Ratings[1].Value+"\r\n"
-		+"Produced in "+JSON.parse(body).Country+"\r\n"
-		+"Language: "+JSON.parse(body).Language+"\r\n"
-		+"Plot: "+JSON.parse(body).Plot+"\r\n"
-		+"---------------------------------------------"+"\r\n", function(){})
-  		} else {
-			console.log("See Error: "+error);
-			fs.appendFile("log.txt", "Error occurred. See below: "+"\r\n"+error+"\r\n", function(){});
-			}
-		});
-	}
+	
 }
+
+
 
 
 if (liriCommand === "do-what-it-says") {
