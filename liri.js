@@ -45,6 +45,7 @@ else{
 
 
 
+
 function myTwitterFeed(){
 
 	let twitterAcc='trrychng'
@@ -53,8 +54,8 @@ function myTwitterFeed(){
 
 	client.get('statuses/user_timeline', {screen_name: twitterAcc, count: 20 }, function(error, tweets, response) {
       fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
-      +"----------------------------"+"\r\n"
-      +"Beginning Twitter feed..."+"\r\n", function(){});
+      +"----------------------------\r\n"
+      +"Beginning Twitter feed for "+twitterAcc+"...\r\n", function(){});
 
       for (i=0; i<tweets.length; i++){
       resultsFeed++
@@ -70,7 +71,7 @@ function myTwitterFeed(){
     };
     if (error) {
     	console.log(error)
-    	fs.appendFile("log.txt", "Error occured. See below: "+"\r\n"+error)
+    	fs.appendFile("log.txt", "Error occured. See below:\r\n"+error)
     }
   });
  }
@@ -81,9 +82,7 @@ function myTwitterFeed(){
 function spotifyThisSong() {
 	client = new spotify(keys.spotify);
 
-	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
-	+"---------------------------------------------"+"\r\n"
-  +"Beginning Spotify search..."+"\r\n", function(){})
+	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n", function(){})
 
 	if (liriSubject === "") {
 		liriSubject = "Everybody"}
@@ -92,32 +91,20 @@ function spotifyThisSong() {
   
   	if (err) {
     	return console.log("Error occurred: "+err);
-    	fs.appendFile("log.txt", "Error occurred. See below: "+"\r\n"+err+"\r\n", function(){});
+    	fs.appendFile("log.txt", "Error occurred. See below: \r\n"+err+"\r\n", function(){});
   	}
+
   	for (var i=0; i < data.tracks.items.length; i++) {
   		resultsFeed++;
-  		console.log("---------------------------------------------")
-  		console.log(resultsFeed+".");
- 		console.log("Artist: "+data.tracks.items[i].artists[0].name);
-		console.log("Song Name: "+data.tracks.items[i].name);
-		fs.appendFile("log.txt", "---------------------------------------------"+"\r\n"
-		+resultsFeed+"."+"\r\n"
-		+"Artist: "+data.tracks.items[i].artists[0].name+"\r\n"
-		+"Song Name: "+data.tracks.items[i].name+"\r\n", function(){});
-		
-		if (data.tracks.items[i].preview_url == null) {
-		console.log("Link: "+data.tracks.items[i].external_urls.spotify);
+  		let log ="---------------------------------------------\r\n"
+  		+resultsFeed+".\r\n"
+ 		+"Artist: "+data.tracks.items[i].artists[0].name+"\r\n"
+		+"Song Name: "+data.tracks.items[i].name+"\r\n"
+		+"Album: "+data.tracks.items[i].album.name+"\r\n"
+		+"Link: "+data.tracks.items[i].external_urls.spotify+"\r\n"
 
-		fs.appendFile("log.txt", "Link: "+data.tracks.items[i].external_urls.spotify+"\r\n", function(){})
-		} else {
-		console.log("Preview Link: "+data.tracks.items[i].preview_url);
-		fs.appendFile("log.txt", "Preview Link: "+data.tracks.items[i].preview_url+"\r\n", function(){})
-		}
-
-		console.log("Album: "+data.tracks.items[i].album.name);
-		console.log("---------------------------------------------")
-		fs.appendFile("log.txt", "Album: "+data.tracks.items[i].album.name+"\r\n"
-		+"---------------------------------------------"+"\r\n", function(){})
+		console.log(log)
+		fs.appendFile("log.txt", log, function(){});
 		};
   	});
   
@@ -138,8 +125,6 @@ function movieSearch() {
 
      // console.log(JSON.stringify(response, null, 2));
 		let log ="---------------------------------------------"+"\r\n"
-	 			 +"Beginning movie search..."+"\r\n"
-	 			 +"---------------------------------------------"+"\r\n"
 	 			 +"Title: "+JSON.parse(body).Title+"\r\n"
 	 			 +"Released: "+JSON.parse(body).Released+"\r\n"
 	 			 +"IMDB Rating: " + JSON.parse(body).imdbRating+"\r\n"
