@@ -24,14 +24,21 @@ for (var i = 3; i < nodeArgs.length; i++) {
 }
 
 
+
 if (liriCommand === "my-tweets") {
 	myTwitterFeed();
 } 
-if (liriCommand === "spotify-this-song") {
+else if (liriCommand === "spotify-this-song") {
 	spotifyThisSong();
 }
-if (liriCommand === "movie-this") {
-movieSearch();
+else if (liriCommand === "movie-this") {
+	movieSearch();
+}
+else if (liriCommand === "do-what-it-says"){
+	doRandom();
+}
+else{
+	console.log("Not a Valid command!")
 }
 
 
@@ -77,8 +84,11 @@ function spotifyThisSong() {
 	fs.appendFile("log.txt", "\r\nCommand to run: "+process.argv.slice(2)+"\r\n"
 	+"---------------------------------------------"+"\r\n"
   +"Beginning Spotify search..."+"\r\n", function(){})
+
 	if (liriSubject === "") {
-  	client.search({ type: 'track', query: "The Sign Ace of Base" }, function(err, data) {
+		liriSubject = "Everybody"}
+
+  	client.search({ type: 'track', query: liriSubject }, function(err, data) {
   
   	if (err) {
     	return console.log("Error occurred: "+err);
@@ -110,38 +120,7 @@ function spotifyThisSong() {
 		+"---------------------------------------------"+"\r\n", function(){})
 		};
   	});
-  } else {
-
-		client.search({ type: 'track', query: liriSubject }, function(err, data) {
   
-  	if (err) {
-    	return console.log("Error occurred: "+err);
-    	fs.appendFile("log.txt", "Error occurred. See below: "+"\r\n"+err+"\r\n", function(){});
-  	}
-  	for (var i=0; i < data.tracks.items.length; i++) {
-  		resultsFeed++;
-  		console.log("---------------------------------------------")
-  		console.log(resultsFeed+".");
- 		console.log("Artist: "+data.tracks.items[i].artists[0].name);
-		console.log("Song Name: "+data.tracks.items[i].name);
-		fs.appendFile("log.txt", "---------------------------------------------"+"\r\n"
-		+resultsFeed+"."+"\r\n"
-		+"Artist: "+data.tracks.items[i].artists[0].name+"\r\n"
-		+"Song Name: "+data.tracks.items[i].name+"\r\n", function(){});
-		if (data.tracks.items[i].preview_url == null) {
-		console.log("Link: "+data.tracks.items[i].external_urls.spotify);
-		fs.appendFile("log.txt", "Link: "+data.tracks.items[i].external_urls.spotify+"\r\n", function(){})
-		} else {
-		console.log("Preview Link: "+data.tracks.items[i].preview_url);
-		fs.appendFile("log.txt", "Preview Link: "+data.tracks.items[i].preview_url+"\r\n", function(){})
-		}
-		console.log("Album: "+data.tracks.items[i].album.name);
-		console.log("---------------------------------------------")
-		fs.appendFile("log.txt", "Album: "+data.tracks.items[i].album.name+"\r\n"
-		+"---------------------------------------------"+"\r\n", function(){})
-		};
-  	});
-  };
 }
 
 
@@ -178,6 +157,7 @@ function movieSearch() {
 
    	 fs.appendFile("log.txt", log, function(){})
   	} 
+
   	else {
   		console.log("See Error: "+error);
   		fs.appendFile("log.txt", "Error occurred. See below: "+"\r\n"+error+"\r\n", function(){});
@@ -189,7 +169,7 @@ function movieSearch() {
 
 
 
-if (liriCommand === "do-what-it-says") {
+function doRandom(){
 	fs.readFile("random.txt", "utf8", function(error, data) {
 		var dataArr = data.split(",")
 		liriCommand = dataArr[0];
